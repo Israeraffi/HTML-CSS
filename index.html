@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <main class="container">
+
+        <form id="form">
+
+            <h1>Login</h1>
+            <div class="input-box">
+
+                <input type="email" id="email" placeholder="E-mail" class="input requered" oninput="Validemail()">
+                <i class="bx bxs-user"></i>
+                <p class="span" id="p1"><strong>Digite um E-mail valido</strong></p>
+
+            </div>
+            <div class="input-box">
+
+                <input type="password" id="senha" placeholder="Senha" class="input requered" oninput="validacion()">
+                <i class="bx bxs-lock-alt" id="img2"></i>
+                
+            </div>
+            <p class="span" id="p2"><strong>Senha deve ter minimo 8 caracteres</strong></p>
+
+            <p class="span" id="p3" ><strong>E-mail ou  Senha incorreto!</strong></p>
+
+            <div class="lembrar">
+
+                <label>
+                    <input type="checkbox">
+                    Lembrar senha
+                </label>
+                <a href="#">Esqueci a senha</a>
+
+            </div>
+
+            <a href="#"><button type="submit" onclick="login()">Entrar</button></a>
+
+            <div class="cadrastar">
+
+                <p>Não tem conta? <a href="index2.html">Cadraste-se</a></p> 
+            
+            </div>
+
+        </form>
+
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

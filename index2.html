@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadrasto</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <main class="container">
+
+        <form id="form">
+
+            <h1>Criar conta</h1>
+
+            <div class="input-box">
+
+                <input type="text" id="nome" placeholder="Nome completo" class="requered" oninput="validarNome(); capitalizarNome()">
+                <p class="span"><strong>Digite seu nome</strong></p>
+
+            </div>
+
+            <div class="input-box">
+
+                <input type="text" autocomplete="off" id="cpf" maxlength="14"  placeholder="CPF" class="requered" oninput="validarCPF()" >
+                <p class="span"><strong>Digite seu cpf</strong></p>
+
+            </div>
+
+            <div class="input-box">
+
+                <input type="text" autocomplete="off" maxlength="10"  placeholder="Nascimento" class="requered" oninput="validarData()" >
+                <p class="span"><strong>Digite a data de nascimento valida</strong></p>
+
+            </div>
+
+            <div class="input-box">
+
+                <input type="tel"  placeholder="Telefone" id="tel" maxlength="14" class="requered" oninput="validarTel()" >
+                <p class="span"><strong>Digite seu telefone</strong></p>
+
+            </div>
+
+            <div class="input-box">
+
+                <input type="email" id="email"  placeholder="E-mail" class="requered" oninput="validarEmail()">
+                <p class="span"><strong>Digite seu e-mail</strong></p>
+
+            </div>
+            <div class="input-box">
+
+                <input type="password" id="senha" placeholder="Senha" class="requered" oninput="validarSenha()">
+                <p class="span" id="span2"><strong>Deve ter no minimo 8 caracteres</strong></p>
+                
+            </div>
+            
+            <div class="input-box2">
+
+                <input type="password" id="confsenha"  placeholder="Confirmar a senha" class="requered" oninput="confSenha()">
+                <p class="span"><strong>As senhas devem ser compativeis</strong></p>
+            </div>
+
+            <a href="#"><button type="submit" onclick="">cadrastar</button></a>
+
+
+
+        </form>
+
+    </main>
+    <script src="script2.js"></script>
+</body>
+</html>
